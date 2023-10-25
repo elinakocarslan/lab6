@@ -17,7 +17,8 @@ def main():
         user_option = int(input("Please enter an option: "))
         if user_option == 1:
             user_password = (input("Please enter your password to encode: "))
-            print(encoder(user_password))
+            encoded_password = encoder(user_password)
+            # print(encoder(user_password))
             print("Your password has been encoded and stored!")
         elif user_option == 2:
             # once you do the decode()function you can put it here
