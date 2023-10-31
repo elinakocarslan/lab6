@@ -9,6 +9,15 @@ def encoder(password):
         encoded1_password = ''.join(encoded_password)
     return encoded1_password
 
+def decoder(password):
+    #works
+    decoded_password = []
+    acc_decoded_pass = []
+    for i in range(len(password)):
+        decoded_num = int(password[i])-3
+        decoded_password.append(str(decoded_num))
+        acc_decoded_pass = ''.join((decoded_password))
+    return acc_decoded_pass
 
 def main():
     # while the code hasn't exited
